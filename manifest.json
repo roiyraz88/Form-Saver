@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Form Saver",
+  "version": "1.0",
+  "description": "שומר אוטומטית טפסים פתוחים ומחזיר אותם אם הדפדפן רוענן או נסגר בטעות.",
+  "permissions": [
+    "storage",
+    "scripting"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["contentScript.js"]
+    }
+  ],
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  }
+}
